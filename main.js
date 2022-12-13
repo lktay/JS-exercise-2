@@ -41,7 +41,6 @@ console.log(Math.floor(c));
 
 //exercise 5
 console.log("Exercise 5")
-let name = Leoni
 let age = 26
 
 function dogAge(age) {
@@ -61,39 +60,67 @@ else {
 }
 return dogYears.toFixed(1);
 }
+console.log(dogAge(26))
 
 
 
 
 
+//exercise 5 alt 
+//not working
 
+function ageToDogAge(age) {
 
-
-
-
-  // if (age >= 1)  
-//  {
-  // dogYears == 15;
-  // age = age - 1;}
-// 
-  // else if (age >= 2)
-  // {
-  // dogYears += 9;
-// age = age - 1;}
-// 
-  // else if (age >= 3)
-  // {
-  // return dogYears = age * 5;}
-// }
-// dogAge();
-// console.log(dogYears);
+  let dogAge;
+  if (age > 0) {
+    age -= 1;
+    dogAge += 15;
+  }
+  if (age > 0) {
+    age -= 1;
+    dogAge += 9;
+  }
+  if (age > 0) {
+    dogAge += age * 5;
+  }
+  return dogAge;
+}
+console.log("Your age in dog years is " + ageToDogAge(age));
 
 
 
 //exercise 6
 
-function calculator(num1, num2, operator) {
+
+// function calculator(num1, operator, num2) {
+// 
+// return num1 operator num2;
+// 
+// }
+// console.log(calculator(10, "*", 3))
 
 
+//exercise 7 
 
+let a = prompt("pick a number");
+let b = prompt("pick another number");
+function min(a, b) {
+  if (a > b) {
+  return a;
+  }
+else {
+    return b;
+  }
 }
+console.log(min(a, b));
+
+//exercise 8
+
+let x = prompt("pick a number");
+let y = prompt("pick a power");
+
+function pow(x, y) {
+z = Math.pow(x, y);
+return z
+}
+console.log(pow(x, y));
